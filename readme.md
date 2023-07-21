@@ -63,7 +63,7 @@
         <li>Carpeta 'vendor': se crea de forma automática al instalar Composer.</li>
         <li>'composer.json' y 'composer.lock': se crea de forma automática al instalar Composer.</li>
         <li>'.phpunit.result.cache': se crea de forma autómatica al instalar PHPUnit.</li>
-        <li>'phpunit.xml': sirve para definir variables de entorno que te permiten conectar a una base de datos de prueba diferente.<br>
+        <li>'phpunit.xml': sirve para definir variables de entorno que te permiten conectar a una base de datos de prueba diferente
         y asegurarte de que las pruebas se ejecuten en ese entorno sin afectar a tu base de datos de producción.</li>
     </ul>
 
