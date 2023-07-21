@@ -1,0 +1,20 @@
+<phpunit>
+    <!-- Otras configuraciones de PHPUnit -->
+    <!-- El elemento <php> se utiliza para definir variables de entorno que se pueden utilizar en tus pruebas. 
+    El elemento <env> dentro de <php> se utiliza para definir variables de entorno específicas. -->
+    <php>
+        <env name="DB_CONNECTION" value="mysql"/>
+        <env name="DB_HOST" value="localhost"/>
+        <env name="DB_PORT" value="3306"/>
+        <env name="DB_DATABASE" value="todo_list_test"/>
+        <env name="DB_USERNAME" value="root"/>
+        <env name="DB_PASSWORD" value=""/>
+    </php>
+
+    <!-- Configuración para buscar pruebas en el directorio 'tests' -->
+    <testsuites>
+        <testsuite name="My Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
