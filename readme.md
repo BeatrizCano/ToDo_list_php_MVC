@@ -7,10 +7,12 @@
 
 <h3>Instalaciones necesarias:</h3>
     <ul>
-        <li>Xampp
-            <li>Configurar las variables de entorno en windows para incluir la ruta 'path.</li>
-            <li>Visualizar datos en consola: 'php nombre_archivo.php'.</li>
-        </li>
+        <li>Xampp:
+            <ul>
+             <li>Configurar las variables de entorno en windows para incluir la ruta 'path.</li>
+             <li>Visualizar datos en consola: 'php nombre_archivo.php'.</li>
+            </ul>
+         </li>
         <li>Composer</li>
             <li>Necesario para usar PHPUnit.</li>
         <li>PHP Unit</li>
