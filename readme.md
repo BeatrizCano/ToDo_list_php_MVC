@@ -3,7 +3,7 @@
 <p>Este proyecto se ha creado usando Xampp, MySQL, Composer y, PHPUnit para llevar a cabo el testing.</p>
 
 <p>Una ToDo List es una aplicación simple pero útil que permite a los usuarios organizar y administrar sus tareas diarias. Este desarrollo requiere
- de una persona profesional en desarrollo web full stack, especialmente conocimientos sólidos en desarrollo del lado del servidor, modelado y gestión de bases de datos y por supuesto pruebas unitarias que garanticen un funcionamiento correcto.</p>
+ de conocimientos sólidos en desarrollo del lado del servidor, modelado y gestión de bases de datos y por supuesto pruebas unitarias que garanticen un funcionamiento correcto.</p>
 
 <h3>Instalaciones necesarias:</h3>
     <ul>
