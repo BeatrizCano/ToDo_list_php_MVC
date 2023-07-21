@@ -9,15 +9,21 @@
     <ul>
         <li>Xampp:
             <ul>
-             <li>Configurar las variables de entorno en windows para incluir la ruta 'path.</li>
-             <li>Visualizar datos en consola: 'php nombre_archivo.php'.</li>
+              <li>Configurar las variables de entorno en windows para incluir la ruta 'path.</li>
+              <li>Visualizar datos en consola: 'php nombre_archivo.php'.</li>
             </ul>
          </li>
-        <li>Composer</li>
-            <li>Necesario para usar PHPUnit.</li>
-        <li>PHP Unit</li>
-            <li>Instalarlo a través de composer para que las versiones sean compatibles.</li>
-            <li>Visualizar datos en consola: 'vendor/bin/phpunit'.</li>
+        <li>Composer
+            <ul>
+              <li>Necesario para usar PHPUnit.</li>
+            </ul>
+         </li>
+        <li>PHP Unit
+            <ul>
+              <li>Instalarlo a través de composer para que las versiones sean compatibles.</li>
+              <li>Visualizar datos en consola: 'vendor/bin/phpunit'.</li>
+            </ul>
+        </li>
     </ul>
 
 <h3>Funcionalidades:</h3>
