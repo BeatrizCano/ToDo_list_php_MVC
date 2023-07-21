@@ -38,7 +38,7 @@
 
 <h3>Organización del proyecto y herramientas:</h3>
     <ul>
-        <li>Slidesgo: Historias de usuario: https://docs.google.com/presentation/d/1DVQWFji0CNaMXy4Dju6IzJpwdqd9T-0Kw_GhOsVujWc/edit#slide=id.g93d42c1dd5_0_79</li>
+        <li>Slidesgo: Historias de usuario:https://docs.google.com/presentation/d/1y-KusOZVPes6-gwPq6Qn5U2M1StOaNkojpNjcyQGbi0/edit#slide=id.ga9b1ea64fb_0_485</li>
         <li>Trello: tablero 'product backlog': https://trello.com/b/PmOVrPuk/todo-list-php</li>
         <li>DrawSQL: Modelado de datos: https://drawsql.app/teams/beatriz-cano-fernandez-team/diagrams/modelado-todo-list-php</li>
         <li>Visual Studio Code: Creación del código del proyecto usando Modelo Vista Controlador.</li>   
