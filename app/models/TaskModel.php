@@ -1,7 +1,7 @@
 <?php
 class TaskModel {
     private $comm;
-    private $tableName; // Agregar una propiedad para almacenar el nombre de la tabla
+    private $tableName; 
 
     public function __construct(PDO $comm, $tableName) {
         $this->comm = $comm;

@@ -1,29 +1,20 @@
 <?php
-// Importar la clase DatabaseConnection
+
 require_once __DIR__ . '/../database/DatabaseConnection.php';
-// Importar los archivos de configuración
 require_once __DIR__ . '/../../config/config.php';
 require_once __DIR__ . '/../../config/configTest.php';
-
-// Importar la clase TaskModel
 require_once __DIR__ . '/../models/TaskModel.php';
-// Importar la clase TaskController
 require_once __DIR__ . '/../controllers/TaskController.php';
 
 use app\database\DatabaseConnection;
 
-// Crear una instancia de la clase DatabaseConnection para obtener la conexión a la base de datos
+
 $comm = DatabaseConnection::getConnection();
-// Obtener el nombre de la tabla según el entorno (para pruebas o desarrollo)
 $tableName = DatabaseConnection::getTableName();
-
-// Crear una instancia del modelo Task y pasar la conexión PDO al constructor
 $taskModel = new TaskModel($comm, $tableName);
-
-// Crear una instancia del modelo TaskController y pasar la conexión PDO al constructor
 $taskController = new TaskController($comm, $taskModel);
 
-// Verificar si se ha enviado un ID para eliminar una tarea
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])) {
         $id = $_GET['id'];
@@ -33,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
 }
 
-// Verificar si se ha enviado un ID para actualizar una tarea
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_GET['action']) && $_GET['action'] === 'update' && isset($_GET['id'])) {
         $id = $_GET['id'];
@@ -43,26 +33,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['submit']) && $_POST['submit'] === 'update') {
-        // Aquí puedes procesar la actualización de la tarea
-        // Puedes obtener los valores del formulario utilizando $_POST
-
-        // Ejemplo:
+       
         $id = $_POST['id'];
         $task = $_POST['task'];
         $description = $_POST['description'];
         $taskDueDate = $_POST['task-due-date'];
 
-        // Llama al método correspondiente en el modelo para actualizar la tarea
         $taskModel->updateModifyTask($task, $description, $taskDueDate, $id);
 
-        // Redirigir a la página principal después de la actualización
         header('Location: ../../public/index.php');
         exit();
     }
 }
 
 
-// Verificar qué acción se debe realizar según el parámetro "action" enviado por el formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['action'])) {
         $action = $_POST['action'];
@@ -83,16 +67,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Redirigir a la página principal después de realizar una acción
     header('Location: ../../public/index.php');
     exit();
 }
 
-// Obtener todas las tareas
 $records = $taskModel->getAllTasks();
 
-
-// Mostrar las tareas
 foreach ($records as $record) {
     echo '<li class="list-group-item">';
     echo '<form action="../app/controllers/tasks.php" method="post">';
