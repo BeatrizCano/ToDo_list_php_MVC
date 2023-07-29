@@ -43,6 +43,7 @@
         <li>DrawSQL: Modelado de datos: https://drawsql.app/teams/beatriz-cano-fernandez-team/diagrams/modelado-todo-list-php</li>
         <li>Visual Studio Code: Creación del código del proyecto usando Modelo Vista Controlador.</li>   
         <li>Bootstrap 5: para el diseño del frontend.</li>   
+        <li>Canva.com para crear la presentación del proyecto: https://www.canva.com/design/DAFpRy-4HGE/_gtx0NEkeOFGoy_E3COMjw/edit?analyticsCorrelationId=83e678a2-7243-40e0-96d5-30e61071c310</li>
     </ul>
 
 <h3>Organización del directorio de carpetas:</h3>
