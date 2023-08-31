@@ -1,4 +1,4 @@
-<h1>TODO LIST EN PHP MVC</H1>
+<h1>TODO LIST PHP MVC</H1>
 
 <p>Este proyecto se ha creado usando Xampp, MySQL, Composer y, PHPUnit para llevar a cabo el testing.</p>
 
